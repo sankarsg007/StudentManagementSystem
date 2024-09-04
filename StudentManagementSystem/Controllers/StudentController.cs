@@ -35,5 +35,14 @@ namespace StudentManagementSystem.Controllers
             return View();
         }
 
+        public ActionResult LoginStudent() 
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Logout() 
+        {
+            return RedirectToAction("Index", "Home");
+        }
     }
 }
