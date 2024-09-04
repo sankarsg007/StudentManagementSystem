@@ -96,12 +96,17 @@
                     transform: scale(0.98);
                 }
     </style>
+    <script>
+        function showAlert() {
+            alert('Student Registration Successful');
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h2>Student Registration</h2>
 
-        @using (Html.BeginForm("Register", "Student", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        @using (Html.BeginForm("Register", "Student", FormMethod.Post, new { @class = "form-horizontal", role = "form", onsubmit = "showAlert()" }))
         {
             @Html.AntiForgeryToken()
 

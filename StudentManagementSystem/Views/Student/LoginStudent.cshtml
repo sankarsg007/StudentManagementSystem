@@ -1,0 +1,121 @@
+﻿@* model StudentManagementSystem.Models.Student
+
+@{
+    ViewBag.Title = "Student Login";
+} *@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9dbba;
+        }
+
+        .container {
+            background-color: #5b99c2;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            width: 350px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .input-group1 {
+            padding: 5px;
+            background-color: #1a4870;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            height: 40px;
+        }
+
+        .input-group2 {
+            padding: 5px;
+            background-color: #1a4870;
+            border-radius: 5px;
+            height: 40px;
+        }
+
+        .input-group1,
+        .input-group2 {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            flex-wrap: wrap;
+        }
+
+            .input-group1 input {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+                box-sizing: border-box;
+                background-color: #1a4870;
+            }
+
+            .input-group2 input {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                outline: none;
+                box-sizing: border-box;
+                background-color: #1a4870;
+            }
+
+            .input-group1 ::placeholder {
+                color: #f4f4f4;
+            }
+
+            .input-group2 ::placeholder {
+                color: #f4f4f4;
+            }
+
+        .login-button {
+            padding: 5px;
+            margin-top: 20px;
+            background-color: #1f316f;
+            color: #f4f4f4;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form asp-action="Logout" method="post">
+            <div class="input-group1">
+                <input type="email"
+                       id="email"
+                       name="email"
+                       placeholder="Enter the Email" />
+            </div>
+            <div class="input-group2">
+                <input type="password"
+                       id="password"
+                       name="password"
+                       placeholder="Enter the password"
+                       required />
+            </div>
+            <button type="submit" class="login-button">LOGIN</button>
+        </form>
+        <p>Don't have an Login? <a href="/Student/RegisterStudent">Register</a></p>
+    </div>
+</body>
+</html>

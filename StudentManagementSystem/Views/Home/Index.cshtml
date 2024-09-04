@@ -16,12 +16,18 @@
             text-align: center;
         }
 
+        * {
+            background-color: #FFAD60;
+        }
+
         .container {
+            display: grid;
+            justify-content: center;
             margin-top: 100px;
         }
 
         .btn {
-            background-color: #7a828a;
+            background-color: #A02334;
             color: #fff;
             border: none;
             padding: 15px 30px;
@@ -29,6 +35,7 @@
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
         }
 
             .btn:hover {
@@ -44,13 +51,30 @@
         .btn-container {
             margin: 20px;
             padding: 10px;
+            background-color: #FFEEAD;
+        }
+
+        .btnDiv{
+            border:3px solid black;
+            border-radius:10px;
+            width: 60%;
+            margin-left:20%;
+            height:200px;
+            display: flex;
+            flex-grow:1;
+            align-items: center;
+            justify-content:center;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: #FFEEAD;
 
         }
 
         .header {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
             font-size: 36px;
             color: #333;
-            margin-bottom: 40px;
+            margin-bottom: 100px;
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -59,11 +83,13 @@
         <div class="header">
             Welcome to the Student Management System
         </div>
-        <div class="btn-container">
-            <a href="@Url.Action("Login", "Account")" class="btn">Login</a>
-        </div>
-        <div class="btn-container">
-            <a href="@Url.Action("RegisterStudent", "Student")" class="btn">Register</a>
+        <div class="btnDiv">
+            <div class="btn-container">
+                <a href="@Url.Action("LoginStudent", "Student")" class="btn">Login</a>
+            </div>
+            <div class="btn-container">
+                <a href="@Url.Action("RegisterStudent", "Student")" class="btn">Register</a>
+            </div>
         </div>
     </div>
 </body>
