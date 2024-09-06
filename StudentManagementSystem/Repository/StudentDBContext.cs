@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 
 namespace StudentManagementSystem.Repository
 {
-    public class StudentDBContext
+    public class StudentDBContext 
     {
         private readonly string _connectionString;
         public StudentDBContext(IConfiguration configuration)

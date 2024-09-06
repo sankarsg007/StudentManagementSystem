@@ -40,9 +40,11 @@ namespace StudentManagementSystem.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult Logout() 
+        public ActionResult Logout(Login login) 
         {
-            return RedirectToAction("Index", "Home");
+            var loginDetails = _studentRepository.LoginStudentAsync(login);
+            if (loginDetails != null) { return Ok(); }
+                return RedirectToAction("Index", "Home");
         }
     }
 }
