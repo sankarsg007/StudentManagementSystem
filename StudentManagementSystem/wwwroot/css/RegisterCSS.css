@@ -1,0 +1,167 @@
+﻿body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #FFF4EA;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    grid-row: 1;
+    grid-column: 2;
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #FADFA1;
+}
+
+h2 {
+    margin-left: 70px;
+}
+
+.input-group1 {
+    padding: 10px;
+}
+
+.form-control {
+    width: 35vh;
+    height: 30px;
+    border-radius: 7px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #EEEDED;
+    font-size: 16px;
+}
+
+.btn {
+    margin-left: 140px;
+    margin-top: 30px;
+    height: 30px;
+    width: 70px;
+    background-color: orangered;
+    color: whitesmoke;
+    font-weight: 700;
+}
+
+.para {
+    margin-left: 70px;
+}
+
+.login {
+    color: blue;
+    text-decoration: none;
+}
+
+@media (max-width: 380px ) {
+    .container {
+        margin-top:50px;
+    }
+    h2 {
+        font-size:20px;
+        margin-left:40px;
+
+    }
+    .btn {
+        margin-left:90px;
+    }
+    .para{
+        margin-left:20px;
+    }
+}
+
+@media (min-width: 381px ) and (max-width:480px ) {
+    .container {
+        margin-top:50px;
+    }
+    h2 {
+        font-size:20px;
+        margin-left: 50px;
+    }
+    .btn {
+        margin-left: 110px;
+    }
+
+    .para {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 481px ) and (max-width:768px ) {
+    .container {
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .btn {
+        margin-left: 110px;
+    }
+
+    .para {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 769px ) and (max-width:1024px ) {
+    .container {
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .btn {
+        margin-left: 110px;
+    }
+
+    .para {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 1025px ) and (max-width:1199px ) {
+    .container {
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .btn {
+        margin-left: 110px;
+    }
+
+    .para {
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 1200px ){
+    .container {
+        margin-top: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin-left: 80px;
+    }
+
+    .btn {
+        margin-left: 130px;
+    }
+
+    .para {
+        margin-left: 60px;
+    }
+}
+
+

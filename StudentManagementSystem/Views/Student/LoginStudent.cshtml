@@ -1,94 +1,12 @@
-﻿@model StudentManagementSystem.Models.Login
-
-@{
-    ViewBag.Title = "Student Login";
-} 
+﻿@model StudentManagementSystem.Models.Login 
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f9dbba;
-        }
-
-        .container {
-            background-color: #5b99c2;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-            width: 350px;
-            text-align: center;
-        }
-
-        h2 {
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        .input-group1 {
-            padding: 5px;
-            background-color: #5b99c2;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            height: 40px;
-        }
-
-        .input-group2 {
-            padding: 5px;
-            background-color: #5b99c2;
-            border-radius: 5px;
-            height: 40px;
-        }
-
-        .input-group1 input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            outline: none;
-            box-sizing: border-box;
-            background-color: #1a4870;
-        }
-
-        .input-group2 input {
-            width: 100%;
-            padding: 10px;
-            font-size: 16px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            outline: none;
-            box-sizing: border-box;
-            background-color: #1a4870;
-        }
-
-        .input-group1 ::placeholder {
-            color: #F6F5F5;
-        }
-
-        .input-group2 ::placeholder {
-            color: #F6F5F5;
-        }
-
-        .login-button {
-            padding: 5px;
-            margin-top: 20px;
-            background-color: #1f316f;
-            color: #f4f4f4;
-            border-radius: 7px;
-        }
-    </style>
+    <title>Student Login</title>
+    <link href="~/css/LoginCSS.css" rel="stylesheet" />
 </head>
 <body>
     <div class="container">
